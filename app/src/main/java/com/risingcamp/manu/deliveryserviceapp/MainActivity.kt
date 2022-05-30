@@ -13,6 +13,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        Glide.with(this).load(R.raw.main_delivery_move).override(180).into(binding.bm1GifImg)
+        Glide.with(this).load(R.raw.main_delivery_move).override(180,180).into(binding.bm1GifImg)
     }
 }
