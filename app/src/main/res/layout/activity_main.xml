@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/bm_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/main_menu_img"
+            android:layout_marginLeft="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/main_address_text"
+            android:layout_width="190dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="18.5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_height="wrap_content"
+            android:text="경기 수원시 장안구 서부로 2065"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/bmjua_ttf"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:src="@drawable/main_down_arrow_img"
+            app:layout_constraintStart_toEndOf="@+id/main_address_text"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        <ImageView
+            android:id="@+id/main_mypage_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/main_mypage_img"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="12dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/main_bell_img"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/main_mypage_img"
+            android:layout_marginEnd="10dp"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@+id/main_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/main_search_bar"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/search_bg">
+
+                <SearchView
+                    android:id="@+id/search_View"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="61dp"
+                    android:layout_gravity="center"
+                    android:contextClickable="true"
+                    android:clickable="true"
+                    android:queryHint="핫도그 나와라 뚝딱!!"
+                    android:background="@color/white"
+                    android:focusable="true"
+                    app:layout_constraintEnd_toStartOf="@+id/main_search_edittext"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <EditText
+                    android:id="@+id/main_search_edittext"
+                    android:layout_width="330dp"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:layout_gravity="center"
+                    android:hint="핫도그 나와라 뚝딱!!"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="50dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <FrameLayout
+                android:id="@+id/delivery_sub_title"
+                android:layout_width="185dp"
+                android:layout_height="185dp"
+                app:layout_constraintTop_toBottomOf="@+id/main_search_bar"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bm_main_bg"
+                android:elevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/main_delivery_bg">
+
+                    <TextView
+                        android:id="@+id/bm_main_click_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="배달"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/bmjua_ttf"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="세상은 넓고\n맛집은 많다."
+                        app:layout_constraintTop_toBottomOf="@+id/bm_main_click_text"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/bmjua_ttf"/>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="185dp"
+                android:layout_height="185dp"
+                app:layout_constraintTop_toBottomOf="@+id/main_search_bar"
+                app:layout_constraintStart_toEndOf="@+id/delivery_sub_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bm_main_bg"
+                android:elevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/bm1_gif_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:id="@+id/bm1_main_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="배민1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/bmjua_ttf"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="한 번에 한 집만\n빠르게 배달해요!"
+                        app:layout_constraintTop_toBottomOf="@+id/bm1_main_text"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/bmjua_ttf"/>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </FrameLayout>
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
