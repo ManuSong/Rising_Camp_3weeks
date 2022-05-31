@@ -4,9 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/drawable/bm_main_bg.xml" value="0.367" />
+        <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/drawable/main_middle_bg.xml" value="0.314" />
+        <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/drawable/main_middle_bg1.xml" value="0.314" />
+        <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/drawable/main_middle_bg2.xml" value="0.314" />
+        <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/drawable/main_middle_bg3.xml" value="0.314" />
         <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/drawable/search_bg.xml" value="0.367" />
         <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/layout/activity_splash.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/layout/viewpager_item_list.xml" value="0.36614583333333334" />
       </map>
     </option>
   </component>
