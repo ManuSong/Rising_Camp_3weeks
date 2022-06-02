@@ -1,12 +1,11 @@
-package com.risingcamp.manu.deliveryserviceapp
+package com.risingcamp.manu.deliveryserviceapp.Adapter
 
-import android.graphics.drawable.Drawable
-import android.media.Image
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
+import com.risingcamp.manu.deliveryserviceapp.ImageData
+import com.risingcamp.manu.deliveryserviceapp.R
 
 class ViewPagerAdapter(val imageList : ArrayList<ImageData>) : RecyclerView.Adapter<ViewPagerAdapter.PagerHolder>() {
 
@@ -14,11 +13,11 @@ class ViewPagerAdapter(val imageList : ArrayList<ImageData>) : RecyclerView.Adap
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): ViewPagerAdapter.PagerHolder {
+    ): PagerHolder {
         return PagerHolder((parent))
     }
 
-    override fun onBindViewHolder(holder: ViewPagerAdapter.PagerHolder, position: Int) {
+    override fun onBindViewHolder(holder: PagerHolder, position: Int) {
       holder.bindWithView(imageList[position])
     }
 

@@ -10,4 +10,7 @@
     <color name="bm_color">#39BFBF</color>
     <color name="light_gery">#3C808080</color>
     <color name="lighy_bm_color">#3439BFBF</color>
+
+    <color name="geary">#CD808080</color>
+    <color name="transperency">#00000000</color>
 </resources>

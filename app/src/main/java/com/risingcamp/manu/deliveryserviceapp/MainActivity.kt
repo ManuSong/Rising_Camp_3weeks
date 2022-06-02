@@ -1,10 +1,11 @@
 package com.risingcamp.manu.deliveryserviceapp
 
-import android.graphics.drawable.Drawable
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.viewpager2.widget.ViewPager2
 import com.bumptech.glide.Glide
+import com.risingcamp.manu.deliveryserviceapp.Adapter.ViewPagerAdapter
 import com.risingcamp.manu.deliveryserviceapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -31,6 +32,14 @@ class MainActivity : AppCompatActivity() {
         binding.mainAdView.apply {
             adapter = viewPagerAdapter
             orientation = ViewPager2.ORIENTATION_HORIZONTAL
+        }
+
+        binding.deliverySubTitle.apply {
+            setOnClickListener {
+                startActivity(
+                    Intent(this@MainActivity, DeliveryMainActivity::class.java)
+                )
+            }
         }
 
 

@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/drawable/bm_main_bg.xml" value="0.367" />
+        <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/drawable/bottom_icon_color.xml" value="0.314" />
         <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/drawable/main_bm1_chip_bg.xml" value="0.314" />
         <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/drawable/main_middle_bg.xml" value="0.314" />
         <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/drawable/main_middle_bg1.xml" value="0.314" />
@@ -11,10 +12,19 @@
         <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/drawable/main_middle_bg3.xml" value="0.314" />
         <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/drawable/quick_recyclerview_img_bg.xml" value="0.314" />
         <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/drawable/search_bg.xml" value="0.367" />
+        <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/drawable/tab_background.xml" value="0.314" />
+        <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/drawable/tab_bg_resize.xml" value="0.314" />
+        <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/drawable/tab_selected_bg.xml" value="0.314" />
+        <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/layout/activity_delivery_main.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/layout/activity_splash.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/layout/fragment_main_delivery.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/layout/main_deliver_choice_item.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/layout/main_recycle_item.xml" value="0.25" />
+        <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/layout/main_view_pager_item.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/layout/menu_choice_item.xml" value="0.33" />
         <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/layout/viewpager_item_list.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/menu/btm_navi_item.xml" value="0.36614583333333334" />
       </map>
     </option>
   </component>

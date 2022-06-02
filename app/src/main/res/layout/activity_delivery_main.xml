@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeliveryMainActivity">
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/address_click_bar"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+
+        <TextView
+            android:id="@+id/address_text"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="경기 수원시 장안구 서부로 2065"
+            android:textSize="16dp"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bmjua_ttf"
+            android:maxLines="1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginRight="8dp"/>
+
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/delivery_main_downarrow"
+            app:layout_constraintStart_toEndOf="@+id/address_text"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/main_back_arrrow"
+        android:layout_width="16.5dp"
+        android:layout_height="25dp"
+        android:src="@drawable/main_right_arrow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="17.5dp"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:overScrollMode="never"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/address_click_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/main_tab"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:tabMode="scrollable"
+                app:tabTextColor="@color/geary"
+                android:background="@color/white"
+                app:tabSelectedTextColor="@color/white"
+                app:tabIndicatorHeight="0dp"
+                app:tabRippleColor="@android:color/transparent"
+                app:tabBackground="@drawable/tab_bg_resize"
+                android:layout_marginLeft="5dp">
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="배달"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="배민1"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="포장"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B마트"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="쇼핑라이브"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="선물하기"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전국별미"/>
+
+
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/main_ad_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:layout_constraintTop_toBottomOf="@+id/main_tab"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:background="@color/white"
+                android:id="@+id/menu_choice_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:overScrollMode="never"
+                app:layout_constraintTop_toBottomOf="@id/main_ad_viewpager"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:background="@color/white"
+                android:id="@+id/menu_recycler_view"
+                android:layout_width="match_parent"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:overScrollMode="never"
+                app:spanCount="5"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                android:layout_height="300dp"
+                app:layout_constraintTop_toBottomOf="@+id/menu_choice_recycler"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:itemIconTint="@color/geary"
+        app:itemRippleColor="@android:color/transparent"
+        app:menu="@menu/btm_navi_item"
+        android:background="@color/white"
+        app:itemBackground="@color/white"
+        app:itemIconSize="@dimen/icon_size"
+        android:textAlignment="center"
+        app:itemTextColor="@color/geary"
+        app:labelVisibilityMode="labeled">
+
+        <ImageView
+            android:id="@+id/btm_navi_hombtn"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="6dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/main_bottom_navi_middle"
+            android:layout_gravity="center"/>
+
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

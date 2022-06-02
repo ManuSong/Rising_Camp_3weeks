@@ -10,12 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DeliveryServiceApp">
         <activity
+            android:name=".DeliveryMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DeliveryServiceApp.SplashActivity"/>
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".SplashActivity"
-            android:theme="@style/Theme.DeliveryServiceApp.SplashActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.DeliveryServiceApp.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
