@@ -1,16 +1,12 @@
 package com.risingcamp.manu.deliveryserviceapp
 
-import android.content.Intent
+import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.FragmentTransaction
 import androidx.viewpager2.widget.ViewPager2
 import com.bumptech.glide.Glide
 import com.risingcamp.manu.deliveryserviceapp.Adapter.ViewPagerAdapter
 import com.risingcamp.manu.deliveryserviceapp.databinding.ActivityMainBinding
-import com.risingcamp.manu.deliveryserviceapp.mainFragment.DeliverFragment
-import com.risingcamp.manu.deliveryserviceapp.mainFragment.DeliverOneFragment
-import com.risingcamp.manu.deliveryserviceapp.mainFragment.PickUpFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -38,23 +34,8 @@ class MainActivity : AppCompatActivity() {
             orientation = ViewPager2.ORIENTATION_HORIZONTAL
         }
 
-        binding.deliverySubTitle.apply {
-            setOnClickListener {
-                startActivity(
-                    Intent(this@MainActivity, DeliveryMainActivity::class.java)
-                )
-            }
-        }
-
-        binding.bm1Container.apply {
-            setOnClickListener {
-
-            }
-        }
-
 
     }
-
 
 
 
