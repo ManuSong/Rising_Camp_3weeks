@@ -1,11 +1,17 @@
 package com.risingcamp.manu.deliveryserviceapp.Adapter
 
+import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.risingcamp.manu.deliveryserviceapp.DeliveryMainActivity
+import com.risingcamp.manu.deliveryserviceapp.JanpanFoddActivity
+import com.risingcamp.manu.deliveryserviceapp.MainActivity
 import com.risingcamp.manu.deliveryserviceapp.R
 
 class MenuChoicePageAdapter(var menuChoiceList : ArrayList<DeliveryMainActivity.MainMenueData>) : RecyclerView.Adapter<MenuChoicePageAdapter.MenuChoiceAdapter>() {
@@ -19,6 +25,11 @@ class MenuChoicePageAdapter(var menuChoiceList : ArrayList<DeliveryMainActivity.
         fun onBindWith(menuChoiceList : DeliveryMainActivity.MainMenueData) {
             menuImg.setImageResource(menuChoiceList.Imagesrc)
             menuText.text = menuChoiceList.title
+            itemView.setOnClickListener {
+                val intent = Intent(itemView.context, JanpanFoddActivity::class.java )
+                intent.putExtra("title", menuText.text)
+                intent.run { itemView.context.startActivity(this) }
+            }
         }
     }
 
@@ -36,4 +47,5 @@ class MenuChoicePageAdapter(var menuChoiceList : ArrayList<DeliveryMainActivity.
     override fun getItemCount(): Int {
         return menuChoiceList.size
     }
+
 }

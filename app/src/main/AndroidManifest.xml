@@ -10,9 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DeliveryServiceApp">
         <activity
+            android:name=".SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JanpanFoddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainDeliverActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mainFragment.PickUpFragment"
+            android:exported="false" />
+        <activity
+            android:name=".mainFragment.DeliverOneFragment"
+            android:exported="false" />
+        <activity
+            android:name=".mainFragment.DeliverFragment"
+            android:exported="false" />
+        <activity
             android:name=".DeliveryMainActivity"
             android:exported="false"
-            android:theme="@style/Theme.DeliveryServiceApp.SplashActivity"/>
+            android:theme="@style/Theme.DeliveryServiceApp.SplashActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
