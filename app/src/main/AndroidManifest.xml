@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DeliveryServiceApp">
         <activity
+            android:name=".FoodDetailChoiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FoodMenuActivity"
+            android:exported="false" />
+        <activity
             android:name=".SearchActivity"
             android:exported="false" />
         <activity

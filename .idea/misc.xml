@@ -15,10 +15,18 @@
         <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/layout/activity_splash.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/layout/main_recycle_item.xml" value="0.25" />
         <entry key="..\:/Users/HPNRT/Desktop/deliveryServiceApp/app/src/main/res/layout/viewpager_item_list.xml" value="0.36614583333333334" />
-        <entry key="..\:/dev/Rising_Camp_3weeks/app/src/main/res/layout/activity_deliver_fragment.xml" value="0.1125" />
+        <entry key="..\:/dev/Rising_Camp_3weeks/app/src/main/res/layout/activity_deliver_fragment.xml" value="0.264" />
         <entry key="..\:/dev/Rising_Camp_3weeks/app/src/main/res/layout/activity_delivery_main.xml" value="0.25364583333333335" />
+        <entry key="..\:/dev/Rising_Camp_3weeks/app/src/main/res/layout/activity_food_detail_choice.xml" value="0.25364583333333335" />
+        <entry key="..\:/dev/Rising_Camp_3weeks/app/src/main/res/layout/activity_food_menu.xml" value="0.2390625" />
         <entry key="..\:/dev/Rising_Camp_3weeks/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/dev/Rising_Camp_3weeks/app/src/main/res/layout/main_deliver_choice_item.xml" value="0.25364583333333335" />
         <entry key="..\:/dev/Rising_Camp_3weeks/app/src/main/res/layout/main_recycle_item.xml" value="0.18432971014492755" />
+        <entry key="..\:/dev/Rising_Camp_3weeks/app/src/main/res/layout/menu_detail_item1.xml" value="0.2" />
+        <entry key="..\:/dev/Rising_Camp_3weeks/app/src/main/res/layout/menu_detail_item2.xml" value="0.1125" />
+        <entry key="..\:/dev/Rising_Camp_3weeks/app/src/main/res/layout/menu_detail_item3.xml" value="0.1125" />
+        <entry key="..\:/dev/Rising_Camp_3weeks/app/src/main/res/layout/plus_check_item.xml" value="0.2526041666666667" />
+        <entry key="..\:/dev/Rising_Camp_3weeks/app/src/main/res/layout/price_item.xml" value="0.4" />
         <entry key="..\:/dev/Rising_Camp_3weeks/app/src/main/res/layout/viewpager_item_list.xml" value="0.25364583333333335" />
         <entry key="..\:/dev/Rising_Camp_3weeks/app/src/main/res/menu/btm_navi_item.xml" value="0.25364583333333335" />
       </map>

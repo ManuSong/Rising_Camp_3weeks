@@ -5,6 +5,7 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Parcelable
 import android.view.MenuItem
 import android.widget.ImageView
 import androidx.recyclerview.widget.GridLayoutManager
@@ -20,6 +21,7 @@ import com.risingcamp.manu.deliveryserviceapp.databinding.ActivityDeliveryMainBi
 import com.risingcamp.manu.deliveryserviceapp.mainFragment.DeliverFragment
 import com.risingcamp.manu.deliveryserviceapp.mainFragment.DeliverOneFragment
 import com.risingcamp.manu.deliveryserviceapp.mainFragment.PickUpFragment
+import kotlinx.parcelize.Parcelize
 
 
 class DeliveryMainActivity : AppCompatActivity() {
@@ -32,8 +34,11 @@ class DeliveryMainActivity : AppCompatActivity() {
 //    private var mainMenuList = ArrayList<MainMenueData>()
 //    private lateinit var menuChoiceAdapter : MenuChoicePageAdapter
     private lateinit var context: Context
-
-    data class MainMenueData(var Imagesrc : Int, var title : String)
+    @Parcelize
+    data class MainMenueData(
+        var Imagesrc : Int,
+        var title : String
+        ) : Parcelable
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

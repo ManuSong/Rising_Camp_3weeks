@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FoodMenuActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/res_menu_img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/bm_quick_img1"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/res_menu_name"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:text="박네집송탄부대찌개&amp;무공닭갈비"
+                android:textSize="28dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bmjua_ttf"
+                app:layout_constraintTop_toBottomOf="@+id/res_menu_img"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <FrameLayout
+                android:id="@+id/res_orgin_container"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                app:layout_constraintStart_toEndOf="@+id/res_menu_name"
+                app:layout_constraintTop_toBottomOf="@+id/res_menu_img">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/res_orgin"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="가게정보,원산지"
+                        android:textColor="@color/black"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/img_arrow_right"
+                        android:layout_marginRight="20dp"
+                        app:layout_constraintStart_toEndOf="@+id/res_orgin"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/res_orgin"/>
+
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/res_star"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_star"
+                android:adjustViewBounds="true"
+                app:layout_constraintTop_toBottomOf="@+id/res_menu_name"
+                app:layout_constraintStart_toStartOf="@+id/res_menu_name"/>
+
+
+            <TextView
+                android:id="@+id/res_star_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.9"
+                android:textSize="19dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/res_star"
+                app:layout_constraintTop_toBottomOf="@+id/res_menu_name"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/res_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(53)"
+                android:textSize="19dp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/res_star_text"
+                app:layout_constraintTop_toBottomOf="@+id/res_menu_name"
+                android:layout_marginLeft="3dp"/>
+
+            <ImageView
+                android:id="@+id/res_arrow"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/img_arrow_right"
+                app:layout_constraintStart_toEndOf="@+id/res_review"
+                app:layout_constraintTop_toBottomOf="@id/res_menu_name"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="3dp"/>
+
+
+            <TextView
+                android:id="@+id/res_min_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="최소주문금액"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:fontFamily="@font/bmjua_ttf"
+                app:layout_constraintTop_toBottomOf="@+id/res_star"
+                app:layout_constraintStart_toStartOf="@+id/res_star"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/res_min_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18,000원"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/res_arrow"
+                app:layout_constraintTop_toBottomOf="@id/res_star"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/bmjua_ttf"/>
+
+            <TextView
+                android:id="@+id/res_deliver_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="최소주문금액"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:fontFamily="@font/bmjua_ttf"
+                app:layout_constraintTop_toBottomOf="@+id/res_min_money"
+                app:layout_constraintStart_toStartOf="@+id/res_star"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/res_deliver_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3,000 ~ 4,000원"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/res_arrow"
+                app:layout_constraintTop_toBottomOf="@id/res_min_fee"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/bmjua_ttf"/>
+
+            <TextView
+                android:id="@+id/res_deliver_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="배달시간"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:fontFamily="@font/bmjua_ttf"
+                app:layout_constraintTop_toBottomOf="@+id/res_deliver_tip"
+                app:layout_constraintStart_toStartOf="@+id/res_star"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/res_deliver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10~20분"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/res_arrow"
+                app:layout_constraintTop_toBottomOf="@id/res_deliver_fee"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/bmjua_ttf"/>
+
+            <TextView
+                android:id="@+id/who_dochak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="후 도착"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/res_deliver"
+                app:layout_constraintTop_toBottomOf="@id/res_deliver_fee"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/bmjua_ttf"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:src="@drawable/bm1_img"
+                app:layout_constraintStart_toEndOf="@+id/who_dochak"
+                app:layout_constraintTop_toBottomOf="@+id/res_deliver_fee"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/menu_puple_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="인기메뉴"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/res_deliver"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/menu_choice_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/menu_puple_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/menu_detail_text"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="[추천] 부대찌개(공기밥별도) 비조리"
+                    android:maxLines="1"
+                    android:textSize="28dp"
+                    android:ellipsize="end"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/bm_quick_img1"
+                    android:background="@drawable/bm_main_bg"
+                    app:layout_constraintStart_toEndOf="@+id/menu_detail_text"
+                    app:layout_constraintTop_toTopOf="@+id/menu_detail_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:id="@+id/menu_howmany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2인분(1인분 +) : 19,000원"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toBottomOf="@+id/menu_detail_text"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3인분(1인분 +) : 28,500원"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toBottomOf="@+id/menu_howmany"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="10dp"/>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+            <!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/who_dochak"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>-->
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
