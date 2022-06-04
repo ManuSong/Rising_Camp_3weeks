@@ -39,12 +39,24 @@ class MainRecyclerAdapter(var quickData : ArrayList<QuickRecycler>) : RecyclerVi
     }
 
     override fun onBindViewHolder(holder: QuickHolder, position: Int) {
-        return holder.bindWithMainView(quickData[position])
+        holder.bindWithMainView(quickData[position])
     }
 
     override fun getItemCount(): Int {
         return quickData.size
     }
+
+    interface OnItemClickListener{
+        fun Onclick(v:View, position: Int)
+    }
+
+    private lateinit var itemClickListener: OnItemClickListener
+
+    fun setItemClickListener(itemClickListener: OnItemClickListener){
+        this.itemClickListener = itemClickListener
+    }
+
+
 
 
 }

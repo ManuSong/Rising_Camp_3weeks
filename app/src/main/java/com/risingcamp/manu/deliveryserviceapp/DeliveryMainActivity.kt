@@ -125,7 +125,12 @@ class DeliveryMainActivity : AppCompatActivity() {
 
         )
 
-        val bnNavi = Dbinding.deliverBtmNaviBar
+        Dbinding.btmNaviHombtn.apply {
+            setOnClickListener{
+                startActivity(Intent(this@DeliveryMainActivity, MainActivity::class.java))
+            }
+
+        }
 
 
 
