@@ -649,6 +649,7 @@
                     android:layout_marginLeft="15dp"/>
 
                 <androidx.constraintlayout.utils.widget.ImageFilterView
+                    android:id="@+id/quick_img"
                     android:layout_width="40dp"
                     android:layout_height="60dp"
                     android:adjustViewBounds="true"
@@ -674,6 +675,15 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/pick_delivery_text"
                     tools:listitem="@layout/main_recycle_item" />
+
+                <Button
+                    android:id="@+id/add_task_btn"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:adjustViewBounds="true"
+                    app:layout_constraintStart_toEndOf="@+id/quick_img"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="추가"/>
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

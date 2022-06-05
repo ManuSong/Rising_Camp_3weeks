@@ -48,6 +48,13 @@ class MainRecyclerAdapter(var quickData : ArrayList<QuickRecycler>) : RecyclerVi
                 intent.run { itemView.context.startActivity(intent) }
             }
 
+            itemView.setOnLongClickListener {
+                val intentCRUD = Intent(itemView.context, MainRecyclerrReplaceActivity::class.java)
+
+                intentCRUD.run { itemView.context.startActivity(intentCRUD) }
+
+                true
+            }
         }
     }
 

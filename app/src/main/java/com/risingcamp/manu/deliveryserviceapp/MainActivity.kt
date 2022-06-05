@@ -1,9 +1,12 @@
 package com.risingcamp.manu.deliveryserviceapp
 
+import android.content.DialogInterface
 import android.content.Intent
 import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.EditText
+import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -48,6 +51,9 @@ class MainActivity : AppCompatActivity() {
         quickRecycler.add(QuickRecycler(R.drawable.bm_quick_img6, "가마로강정 성균관대점", "4.8", "4,000원", "12~18분"))
         quickRecycler.add(QuickRecycler(R.drawable.bm_quick_img7, "화이트스노우 빙수 성균관대", "5.0", "3,500원", "18~30분"))
 
+
+
+
         mainRecyclerAdapter = MainRecyclerAdapter(quickRecycler)
 
         binding.mainQuickDeliveryRecycle.apply {
@@ -59,6 +65,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity(Intent(this@MainActivity, DeliveryMainActivity::class.java))
             }
         }
+
 
     }
 

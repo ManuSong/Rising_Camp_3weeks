@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DeliveryServiceApp">
         <activity
+            android:name=".MainRecyclerrReplaceActivity"
+            android:exported="false" />
+        <activity
             android:name=".FoodDetailChoiceActivity"
             android:exported="false" />
         <activity
